@@ -1,0 +1,6 @@
+CREATE TABLE user_profiles (
+    user_id INTEGER PRIMARY KEY,  -- primary key here
+    stockHoldings TEXT,
+    amount INT
+    FOREIGN KEY (user_id) REFERENCES users(user_id)  -- and also a foreign key
+);

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>My Webpage</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg">
+        <img src="imagesgorilla.jpg" width="70" height="70" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="#">The Gorilla Dilemma</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Vote</a></li>
+                <li class="nav-item"><a class="nav-link" href="strategy.html">Strategy</a></li>
+                <li class="nav-item"><a class="nav-link" href="Humans.html">Humans</a></li>
+                <li class="nav-item"><a class="nav-link" href="Gorilla.html">Gorilla</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Sections -->
+    <div class="container-fluid custom-background">
+        <div class="row">
+            <!-- Left section (2/3 width) -->
+            <div class="col-lg-8 right-section-specific">
+                <div class="header">
+                    <h1 class = "title">Gorillas: The Mighty Beasts</h1>
+                </div>
+
+                <div class="section">
+                    <h2 style="font-size: 1.5rem;">Part 1: Gorilla Facts</h2>
+                    <hr>
+                    <h3>What is my name?</h3>
+                    <div id="part1-feedback" class="feedback"></div>
+
+                    <h3>Random Gorilla Facts:</h3>
+                    <ul>
+                        <li>Gorillas can weigh up to 400 pounds (181 kg)!</li>
+                        <li>They are around 98% genetically similar to humans.</li>
+                        <li>Gorillas are very social and live in family groups called troops.</li>
+                        <li>Gorillas can understand sign language!</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2 style="font-size: 1.5rem;">Part 2: Gorilla Skills</h2>
+                    <hr>
+                    <h3>Strength: <span class="skill-rating">95%</span></h3>
+                    <div class="skill-bar">
+                        <div class="skill strength"></div>
+                    </div>
+
+                    <h3>Climbing Ability: <span class="skill-rating">90%</span></h3>
+                    <div class="skill-bar">
+                        <div class="skill climbing"></div>
+                    </div>
+
+                    <h3>Communication: <span class="skill-rating">85%</span></h3>
+                    <div class="skill-bar">
+                        <div class="skill communication"></div>
+                    </div>
+
+                    <h3>Speed: <span class="skill-rating">60%</span></h3>
+                    <div class="skill-bar">
+                        <div class="skill speed"></div>
+                    </div>
+
+                    <h3>Agility: <span class="skill-rating">80%</span></h3>
+                    <div class="skill-bar">
+                        <div class="skill agility"></div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 style="font-size: 1.5rem;">Part 3: Gorilla Trivia</h2>
+                    <hr>
+                    <h3>How many gorilla species are there?</h3>
+                    <p style="font-color: white;">Answer: There are two main species: Eastern and Western gorillas.</p>
+                    <h3>What is a group of gorillas called?</h3>
+                    <p style="font-color: white;">Answer: A troop.</p>
+                </div>
+            </div>
+
+            <!-- Right section (1/3 width) -->
+            <div class="col-lg-4 left-section">
+                <div class="section">
+                    <model-viewer
+                        src="free_gorilla.glb"
+                        alt="A 3D Gorilla"
+                        auto-rotate
+                        camera-controls
+                        background-color="#111"
+                        class="model-viewer">
+                    </model-viewer>
+                    <h2 class="title">The Mighty Gorilla: A True Force of Nature</h2>
+                    <hr class="divider">
+                    <p class="info">
+                        Gorillas are incredibly strong, with some individuals able to lift up to 10 times their body weight. Imagine the sheer power in each movement!
+                    </p>
+                    <p class="info">
+                        Fun fact: If a gorilla were to face off against 100 men, it’s believed the gorilla would easily defeat them. Despite their size, gorillas are highly skilled in combat, capable of overpowering multiple opponents in a matter of seconds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Dumbass Trivia Time!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+
+            function checkAnswer(button, isCorrect) {
+                // Reset all buttons
+                let buttons = button.parentElement.querySelectorAll("button");
+                buttons.forEach(b => b.disabled = true); // Disable all after first click
+
+                if (isCorrect) {
+                    button.style.backgroundColor = "green";
+                    document.getElementById("part1-feedback").textContent = "Correct!";
+                } else {
+                    button.style.backgroundColor = "red";
+                    document.getElementById("part1-feedback").textContent = "Incorrect";
+                }
+            }
+
+            function checkFreeResponse(button) {
+            let input = document.getElementById("response");
+            let answer = input.value.trim().toLowerCase();
+            let feedback = document.getElementById("part2-feedback");
+
+            if (answer === "heisenberg") {
+                input.style.backgroundColor = "lightgreen";
+                button.style.backgroundColor = "green";
+                //feedback.textContent = "Correct!"; // Set text first
+
+                // Dynamically add the image
+                const img = document.createElement("img");
+                img.src = "https://i.pinimg.com/736x/4a/cb/83/4acb83efaab972a7bb25ec62a333753f.jpg";
+                img.alt = "Heisenberg";
+                img.style.width = "500px"; // Optional styling
+                feedback.appendChild(img); // Then append the image
+
+            } else {
+                input.style.backgroundColor = "lightcoral";
+                button.style.backgroundColor = "red";
+                feedback.textContent = "Incorrect";
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is my name?</h3>
+
+                <!-- TODO: Add multiple choice question here -->
+                <button onclick = "checkAnswer(this, true)">EJ</button>
+                <button onclick = "checkAnswer(this, false)">Marc</button>
+                <button onclick = "checkAnswer(this, false)">Nathan</button>
+                <button onclick = "checkAnswer(this, false)">Franz</button>
+
+                <!-- Feed back shows -->
+                <div id="part1-feedback" class="feedback"></div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Breaking Bad Section</h2>
+                <hr>
+                <h3>Say my name...</h3>
+                <input type="text" id="response">
+                <button onclick="checkFreeResponse(this)">Submit</button>
+                <div id="part2-feedback" class="feedback"></div>
+            </div>
+        </div>
+    </body>
+</html>

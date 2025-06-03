@@ -1,0 +1,217 @@
+/* Optionally, make headers bold for emphasis */
+h1, h2, h3 {
+    font-weight: 700; /* Bold for headers */
+    color: white; /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for emphasis */
+}
+
+/* Optional: Slightly lighter weight for subheadings or smaller text */
+h4, h5, h6 {
+    font-weight: 500; /* Medium weight for subheadings */
+    color: white; /* White text color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Slight shadow */
+}
+
+.navbar {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111 !important; /* override Bootstrap bg-light */
+    color: #fff !important; /* override Bootstrap text color */
+    padding: 1rem;
+}
+
+.navbar a,
+.navbar .nav-link {
+    color: #fff !important; /* Sets link color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Shadow for navbar links */
+}
+
+.navbar a:hover,
+.navbar .nav-link:hover {
+    color: #ccc !important; /* Optional: hover effect */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Darker shadow on hover */
+}
+
+
+
+.left-section {
+    background-color: #333333;
+    color: white;
+    height: 100vh; /* Full height */
+    padding: 20px;
+}
+
+.right-section {
+    background-color: #f8f9fa;
+    color: black;
+    background-image: url('wallpaperflare.com_wallpaper.jpg'); /* Replace with your image path */
+    background-size: cover; /* Make sure the image covers the whole page */
+    background-position: center center; /* Position the image at the center */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Ensure the body takes up the full height of the screen */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar-brand {
+    font-size: 2.5rem !important; /* Larger font size */
+    font-weight: 800 !important; /* Make it bold */
+    color: #A9A9A9 !important; /* Darker gray color */
+    text-transform: uppercase !important; /* Make the text uppercase */
+    letter-spacing: 2px !important; /* Space out the letters slightly */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; /* Optional: make it look more modern */
+}
+
+.navbar-brand:hover {
+    color: #f8c200 !important; /* Change text color on hover to something like a yellow/gold to stand out */
+}
+
+.right-section-specific {
+    background-color: #f8f9fa;
+    color: black;
+    background-image: url('obezyana-monkey-gorilla.jpg');
+    background-size: cover; /* Ensures the background image covers the entire page */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Makes the section fill the full height of the viewport */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style for the container */
+.left-section {
+    padding: 20px;
+    background: linear-gradient(145deg, #1a1a1a, #333);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Style for the 3D model viewer */
+.model-viewer {
+    width: 100%;
+    height: 500px;
+    transition: transform 1s ease-in-out;
+}
+
+/* Title style */
+.title {
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 23px;
+    font-weight: bold;
+    font-size: 3em;
+    color: #00ffcc;
+    text-shadow: 0 0 15px #00ffcc, 0 0 30px rgba(0, 255, 204, 0.5);
+    text-align: center; /* Corrected the syntax */
+}
+
+/* Divider style */
+.divider {
+    width: 50%;
+    border: 2px solid #00ffcc;
+    margin: 20px auto;
+}
+
+/* Info paragraph style */
+.info {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.6em;
+    color: #ddd;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+/* Hover effect for the model */
+.model-viewer:hover {
+    transform: scale(1.05);
+}
+
+.right-section-specific {
+    background-color: #f8f9fa;
+    color: black;
+    background-image: url('obezyana-monkey-gorilla.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.section h3 {
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background-color: #eee;
+    border-radius: 20px;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.skill {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.skill.strength {
+    width: 95%;
+    background-color: #00ffcc;
+}
+
+.skill.climbing {
+    width: 90%;
+    background-color: #ff6347;
+}
+
+.skill.communication {
+    width: 85%;
+    background-color: #ffcc00;
+}
+
+.skill.speed {
+    width: 60%;
+    background-color: #add8e6;
+}
+
+.skill.agility {
+    width: 80%;
+    background-color: #32cd32;
+}
+
+.skill-rating {
+    font-weight: bold;
+    color: #333;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: white; /* override */
+    font-weight: bold;
+}
+
+.section h2,
+.section h3,
+.section ul li,
+.section p,
+.skill-rating {
+    color: white; /* apply white to all relevant text elements */
+    font-size: 1.24rem;
+}

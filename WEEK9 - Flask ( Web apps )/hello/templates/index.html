@@ -1,0 +1,9 @@
+{% extends "layout.html" %} <!--Inheritance form of HTML-->
+
+{% block body %}
+    <form action="/" method="POST">
+        <input autocomplete = "off" autofocus name="name" placeholder="Name" type="text">
+        <button type = "submit">Greet</button>
+    </form>
+{% endblock %}
+

@@ -1,0 +1,4 @@
+Through this problem set, I learned how to use SQL to filter and analyze data from a database.
+One of the more challenging parts was understanding how JOINs work, especially when linking multiple tables together.
+ also found the AVG and LIKE functions intuitive after some practice.
+ Overall, writing readable SQL queries helped me understand how databases are queried in the real world.
