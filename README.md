@@ -23,7 +23,7 @@ This repo includes my solutions to weekly problem sets, labs, and the final proj
 ## 🛠️ Technologies Used
 - **Languages:** C, Python, SQL, JavaScript
 - **Tools:** Git, VS Code, Flask, DB Browser
-- **Web:** HTML, CSS, Bootstrap
+- **Web:** HTML, CSS, Bootstrap, Tailwind
 
 ## 📌 Notes
 - This repository is for educational purposes only.
